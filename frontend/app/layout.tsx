@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css"; // <--- THIS IS CRITICAL
-import fevicon from "../public/fevicon.png";
 
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Media Factory",
-  description: "We craft digital experiences.",
-  icons: fevicon.src,
+  title: "Virtual Station | AR, VR, AI, XR & Metaverse",
+  description: "We forge ruthless AR, VR, and AI ecosystems to strip away the decay and force a new Metaverse dominance.",
 };
 
 export default function RootLayout({
