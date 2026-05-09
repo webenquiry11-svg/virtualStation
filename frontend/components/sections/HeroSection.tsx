@@ -24,7 +24,7 @@ const HeroSection = () => {
           <div className="flex items-center gap-2 min-w-fit">
             <div className="relative">
               <Image 
-                src="/Virtual Station Letterhead 1.png"
+                src="/logo.png"
                 alt="Virtual Station Logo"
                 width={210} 
                 height={52}
