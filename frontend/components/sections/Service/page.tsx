@@ -55,7 +55,7 @@ const ServicesCarousel = () => {
   ];
 
   return (
-    <section id="services" className="relative w-full bg-[#050505] py-32 px-6 overflow-hidden">
+    <section id="services" className="relative w-full bg-[#050505] py-20 md:py-32 px-4 md:px-6 overflow-hidden">
       
       {/* 1. AMBIENT BACKGROUND GLOW */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-blue-600/5 blur-[180px] rounded-full pointer-events-none" />
@@ -72,7 +72,7 @@ const ServicesCarousel = () => {
             <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
             Core_Service_Buffer
           </motion.div>
-          <h2 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase leading-none">
+          <h2 className="text-4xl md:text-6xl lg:text-8xl font-black text-white tracking-tighter uppercase leading-none">
             OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#005296] to-[#005296]/50">SERVICES.</span>
           </h2>
         </div>
@@ -106,7 +106,7 @@ const ServicesCarousel = () => {
             }}
           >
             {xrServices.map((service, i) => (
-              <SwiperSlide key={i} className="max-w-[450px]">
+              <SwiperSlide key={i} className="w-[85vw] sm:max-w-[450px]">
                 <div className="group relative aspect-[4/5] md:aspect-[3/4] rounded-[3.5rem] bg-[#0c0c0c] border border-white/10 overflow-hidden p-10 flex flex-col justify-between transition-all duration-500 hover:border-blue-500/50 shadow-2xl">
                   
                   {/* Glass Top Gradient */}

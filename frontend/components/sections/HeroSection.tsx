@@ -14,21 +14,21 @@ const HeroSection = () => {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full max-w-[1300px] flex items-center justify-between px-10 py-3 
-                     /* EXACT GRADIENT: Light gray/white on left to deep black on right */
-                     bg-gradient-to-r from-[#888888]/80 via-[#222222]/90 to-black/95
+          className="w-full max-w-[1300px] flex items-center justify-between px-6 md:px-10 py-3 
+                     /* EXACT GRADIENT: Solid white on left to deep black on right */
+                     bg-gradient-to-r from-white/95 via-[#222222]/90 to-black/95
                      backdrop-blur-3xl saturate-150 border border-white/10 rounded-3xl 
                      shadow-[0_25px_60px_rgba(0,0,0,0.8)]"
         >
-          {/* LOGO AREA: Perfectly visible against the #888888 starting gradient */}
+          {/* LOGO AREA: Perfectly visible against the solid white starting gradient */}
           <div className="flex items-center gap-2 min-w-fit">
-            <div className="relative">
+            <div className="relative w-32 md:w-[210px]">
               <Image 
                 src="/logo.png"
                 alt="Virtual Station Logo"
                 width={210} 
                 height={52}
-                className="object-contain relative z-10"
+                className="object-contain relative z-10 w-full h-auto"
                 priority
               />
             </div>
@@ -82,7 +82,7 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <h1 className="text-7xl md:text-[8.5rem] font-black leading-[0.8] tracking-tighter mb-10 uppercase">
+          <h1 className="text-5xl sm:text-7xl lg:text-[8.5rem] font-black leading-[0.8] tracking-tighter mb-10 uppercase">
             AI & METAVERSE <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/10">
               OVERWRITING <br /> REALITY

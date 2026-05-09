@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, MapPin, Mail, Phone, Globe, CheckCircle } from 'lucide-react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
@@ -29,7 +30,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="relative w-full bg-[#050505] py-16 md:py-20 px-6 md:px-24 overflow-hidden border-t border-white/5">
+    <section id="contact" className="relative w-full bg-[#050505] py-16 md:py-20 px-4 md:px-24 overflow-hidden border-t border-white/5">
       
       {/* BACKGROUND DEPTH: Subtle Blue Pulse */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600/5 blur-[180px] rounded-full pointer-events-none" />
@@ -37,7 +38,7 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         
         {/* HEADER: BIG TYPOGRAPHY */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-16 md:mb-24 gap-8">
           <div className="max-w-xl">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
@@ -46,13 +47,19 @@ const ContactSection = () => {
             >
               // Initializing_Contact_Protocol
             </motion.div>
-            <h2 className="text-6xl md:text-8xl font-black text-white tracking-tighter leading-none">
+          <h2 className="text-4xl md:text-6xl lg:text-8xl font-black text-white tracking-tighter leading-none">
               BOOK YOUR CUSTOM <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">XR & METAVERSE DEMO.</span>
             </h2>
           </div>
-          <div className="hidden md:block text-right text-gray-600 font-mono text-[10px] space-y-1">
-            <p>LATENCY: OPTIMAL</p>
-            <p>ENCRYPTION: AES-256</p>
+          <div className="flex items-center gap-8">
+            {/* LOTTIE ANIMATION */}
+          <div className="w-48 h-48 sm:w-72 sm:h-72 md:w-96 md:h-96 pointer-events-none opacity-80 shrink-0">
+              <DotLottieReact
+                src="https://lottie.host/ad7147bc-074b-401d-affe-c413efaee673/zwuF3woSut.lottie"
+                loop
+                autoplay
+              />
+            </div>
           </div>
         </div>
 
@@ -98,7 +105,7 @@ const ContactSection = () => {
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="p-10 md:p-12 rounded-[3rem] bg-[#0c0c0c] border border-white/10 shadow-2xl relative overflow-hidden group"
+          className="p-6 sm:p-10 md:p-12 rounded-[3rem] bg-[#0c0c0c] border border-white/10 shadow-2xl relative overflow-hidden group"
           >
             {/* Hover Glow */}
             <div className="absolute -inset-px bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
@@ -176,7 +183,7 @@ const ContactSection = () => {
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
-            className="fixed bottom-8 right-8 md:bottom-12 md:right-12 z-[100] flex items-center gap-4 p-5 rounded-2xl bg-[#0c0c0c] border border-[#005296]/50 shadow-[0_10px_40px_rgba(0,82,150,0.3)]"
+            className="fixed bottom-4 right-4 md:bottom-12 md:right-12 z-[100] flex items-center gap-4 p-4 md:p-5 rounded-2xl bg-[#0c0c0c] border border-[#005296]/50 shadow-[0_10px_40px_rgba(0,82,150,0.3)]"
           >
             <CheckCircle size={24} className="text-emerald-400" />
             <div>

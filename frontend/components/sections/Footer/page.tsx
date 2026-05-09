@@ -11,14 +11,14 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative w-full bg-[#050505] pt-32 pb-10 px-8 md:px-24 overflow-hidden border-t border-white/5">
+    <footer className="relative w-full bg-[#050505] pt-20 md:pt-32 pb-10 px-6 md:px-24 overflow-hidden border-t border-white/5">
       
       {/* 1. BACKGROUND KINETIC TYPOGRAPHY */}
       <div className="absolute top-0 left-0 w-full overflow-hidden pointer-events-none select-none opacity-[0.02] flex whitespace-nowrap">
         <motion.h2 
           animate={{ x: [0, -1000] }}
           transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-          className="text-[15rem] font-black font-mono tracking-tighter uppercase text-white"
+          className="text-[8rem] md:text-[15rem] font-black font-mono tracking-tighter uppercase text-white"
         >
           VIRTUAL STATION • AR • VR • AI • XR • METAVERSE • GAME DEV • VIRTUAL STATION • 
         </motion.h2>
@@ -32,7 +32,7 @@ const Footer = () => {
           {/* Brand Identity Module */}
           <div className="lg:col-span-5 space-y-8">
             <div className="space-y-4">
-               <h2 className="text-4xl font-black text-white tracking-tighter uppercase leading-none">
+               <h2 className="text-3xl md:text-4xl font-black text-white tracking-tighter uppercase leading-none">
                 COMMANDING THE <br /> <span className="text-blue-500">NATIONAL GRID.</span>
               </h2>
               <p className="text-gray-500 text-sm font-light leading-relaxed max-w-sm">
@@ -99,7 +99,7 @@ const Footer = () => {
           </div>
 
           {/* Industries Telemetry Module */}
-          <div className="lg:col-span-4 grid grid-cols-2 gap-8 p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/5 backdrop-blur-3xl">
+          <div className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 gap-8 p-6 sm:p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/5 backdrop-blur-3xl">
             <div className="space-y-4">
               <h4 className="text-[10px] font-mono text-emerald-500 uppercase tracking-[0.4em] font-black flex items-center gap-2">
                 <Cpu size={12} /> Industries
