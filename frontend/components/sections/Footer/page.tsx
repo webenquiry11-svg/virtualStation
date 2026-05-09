@@ -18,7 +18,7 @@ const Footer = () => {
         <motion.h2 
           animate={{ x: [0, -1000] }}
           transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-          className="text-[15rem] font-black tracking-tighter uppercase text-white"
+          className="text-[15rem] font-black font-mono tracking-tighter uppercase text-white"
         >
           VIRTUAL STATION • AR • VR • AI • XR • METAVERSE • GAME DEV • VIRTUAL STATION • 
         </motion.h2>
@@ -63,7 +63,7 @@ const Footer = () => {
           <div className="lg:col-span-3 grid grid-cols-2 lg:grid-cols-1 gap-10">
             <div className="space-y-4">
               <h4 className="text-[10px] font-mono text-[#005296] uppercase tracking-[0.4em] font-black">Main_Navigation</h4>
-              <ul className="space-y-3 text-xs text-gray-400 font-bold uppercase tracking-widest">
+              <ul className="space-y-3 text-xs text-gray-400 font-bold font-mono uppercase tracking-widest">
                 <li className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
                   <span className="w-0 group-hover:w-4 h-px bg-[#005296] transition-all" /> Core Override (Home)
                 </li>
@@ -78,7 +78,7 @@ const Footer = () => {
             
             <div className="space-y-4">
               <h4 className="text-[10px] font-mono text-[#005296] uppercase tracking-[0.4em] font-black">Services</h4>
-              <ul className="space-y-3 text-xs text-gray-400 font-bold uppercase tracking-widest">
+              <ul className="space-y-3 text-xs text-gray-400 font-bold font-mono uppercase tracking-widest">
                 <li className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
                   <span className="w-0 group-hover:w-4 h-px bg-[#005296] transition-all" /> AR Development
                 </li>
@@ -140,7 +140,7 @@ const Footer = () => {
           <motion.button
             onClick={scrollToTop}
             whileHover={{ y: -5 }}
-            className="group flex items-center gap-3 text-[10px] font-black text-white uppercase tracking-[0.5em]"
+            className="group flex items-center gap-3 text-[10px] font-bold font-mono text-white uppercase tracking-[0.5em]"
           >
             Terminal_Top <ArrowUp size={16} className="text-[#005296] group-hover:animate-bounce" />
           </motion.button>

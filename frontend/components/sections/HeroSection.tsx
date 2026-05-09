@@ -35,7 +35,7 @@ const HeroSection = () => {
           </div>
 
           {/* NAV LINKS: White high-contrast text to match reference image */}
-          <ul className="hidden lg:flex items-center gap-12 text-[11px] uppercase tracking-[0.35em] font-black text-white">
+          <ul className="hidden lg:flex items-center gap-12 text-[11px] uppercase tracking-[0.35em] font-bold font-mono text-white">
             <li><a href="#home" className="hover:text-blue-400 transition-all duration-300">Home</a></li>
             <li><a href="#story" className="hover:text-blue-400 transition-all duration-300">Story</a></li>
             <li><a href="#services" className="hover:text-blue-400 transition-all duration-300">Services</a></li>
