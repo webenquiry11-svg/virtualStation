@@ -51,7 +51,7 @@ const Footer = () => {
                   key={i}
                   href={social.link}
                   whileHover={{ y: -5, scale: 1.1 }}
-                  className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-blue-500 transition-all shadow-xl"
+                  className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-[#005296] transition-all shadow-xl"
                 >
                   {social.icon}
                 </motion.a>
@@ -62,37 +62,37 @@ const Footer = () => {
           {/* Services & Main Nav Module */}
           <div className="lg:col-span-3 grid grid-cols-2 lg:grid-cols-1 gap-10">
             <div className="space-y-4">
-              <h4 className="text-[10px] font-mono text-blue-500 uppercase tracking-[0.4em] font-black">Main_Navigation</h4>
+              <h4 className="text-[10px] font-mono text-[#005296] uppercase tracking-[0.4em] font-black">Main_Navigation</h4>
               <ul className="space-y-3 text-xs text-gray-400 font-bold uppercase tracking-widest">
                 <li className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
-                  <span className="w-0 group-hover:w-4 h-px bg-blue-500 transition-all" /> Core Override (Home)
+                  <span className="w-0 group-hover:w-4 h-px bg-[#005296] transition-all" /> Core Override (Home)
                 </li>
                 <li className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
-                  <span className="w-0 group-hover:w-4 h-px bg-blue-500 transition-all" /> Our Story
+                  <span className="w-0 group-hover:w-4 h-px bg-[#005296] transition-all" /> Our Story
                 </li>
                 <li className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
-                  <span className="w-0 group-hover:w-4 h-px bg-blue-500 transition-all" /> Contact
+                  <span className="w-0 group-hover:w-4 h-px bg-[#005296] transition-all" /> Contact
                 </li>
               </ul>
             </div>
             
             <div className="space-y-4">
-              <h4 className="text-[10px] font-mono text-blue-500 uppercase tracking-[0.4em] font-black">Services</h4>
+              <h4 className="text-[10px] font-mono text-[#005296] uppercase tracking-[0.4em] font-black">Services</h4>
               <ul className="space-y-3 text-xs text-gray-400 font-bold uppercase tracking-widest">
                 <li className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
-                  <span className="w-0 group-hover:w-4 h-px bg-blue-500 transition-all" /> AR Development
+                  <span className="w-0 group-hover:w-4 h-px bg-[#005296] transition-all" /> AR Development
                 </li>
                 <li className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
-                  <span className="w-0 group-hover:w-4 h-px bg-blue-500 transition-all" /> VR Development
+                  <span className="w-0 group-hover:w-4 h-px bg-[#005296] transition-all" /> VR Development
                 </li>
                 <li className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
-                  <span className="w-0 group-hover:w-4 h-px bg-blue-500 transition-all" /> XR Development
+                  <span className="w-0 group-hover:w-4 h-px bg-[#005296] transition-all" /> XR Development
                 </li>
                 <li className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
-                  <span className="w-0 group-hover:w-4 h-px bg-blue-500 transition-all" /> AI & Metaverse
+                  <span className="w-0 group-hover:w-4 h-px bg-[#005296] transition-all" /> AI & Metaverse
                 </li>
                 <li className="hover:text-white cursor-pointer transition-colors flex items-center gap-2 group">
-                  <span className="w-0 group-hover:w-4 h-px bg-blue-500 transition-all" /> Game Development
+                  <span className="w-0 group-hover:w-4 h-px bg-[#005296] transition-all" /> Game Development
                 </li>
               </ul>
             </div>
@@ -142,13 +142,13 @@ const Footer = () => {
             whileHover={{ y: -5 }}
             className="group flex items-center gap-3 text-[10px] font-black text-white uppercase tracking-[0.5em]"
           >
-            Terminal_Top <ArrowUp size={16} className="text-blue-500 group-hover:animate-bounce" />
+            Terminal_Top <ArrowUp size={16} className="text-[#005296] group-hover:animate-bounce" />
           </motion.button>
         </div>
       </div>
 
       {/* DECORATIVE LIGHTING */}
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-blue-600/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#005296]/10 blur-[120px] rounded-full pointer-events-none" />
     </footer>
   );
 };

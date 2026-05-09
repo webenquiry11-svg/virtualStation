@@ -8,7 +8,7 @@ const AboutSection = () => {
     <section id="story" className="relative w-full bg-[#050505] py-16 md:py-20 px-6 md:px-24">
       
       {/* 1. SEAMLESS TRANSITION OVERLAY */}
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent shadow-[0_0_20px_rgba(59,130,246,0.5)]" />
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#005296]/50 to-transparent shadow-[0_0_20px_rgba(0,82,150,0.5)]" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         
@@ -17,9 +17,9 @@ const AboutSection = () => {
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-4 text-blue-500 font-mono text-[11px] tracking-[0.5em] uppercase"
+            className="flex items-center gap-4 text-[#005296] font-mono text-[11px] tracking-[0.5em] uppercase"
           >
-            <span className="w-8 h-[1px] bg-blue-500"></span>
+            <span className="w-8 h-[1px] bg-[#005296]"></span>
             Intelligence Overview
           </motion.div>
 
@@ -29,7 +29,7 @@ const AboutSection = () => {
             className="text-6xl md:text-[9rem] font-black tracking-tight leading-[0.8] text-white uppercase"
           >
             OUR <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#005296] to-[#005296]/50">
               STORY.
             </span>
           </motion.h2>
@@ -57,7 +57,7 @@ const AboutSection = () => {
 
         {/* DECORATIVE INTERACTIVE LINE */}
         <div className="mt-24 flex items-center gap-8">
-            <div className="flex-1 h-px bg-gradient-to-r from-blue-500/50 to-transparent"></div>
+            <div className="flex-1 h-px bg-gradient-to-r from-[#005296]/50 to-transparent"></div>
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -65,7 +65,7 @@ const AboutSection = () => {
             >
               Explore Protocol
             </motion.button>
-            <div className="flex-1 h-px bg-gradient-to-l from-blue-500/50 to-transparent"></div>
+            <div className="flex-1 h-px bg-gradient-to-l from-[#005296]/50 to-transparent"></div>
         </div>
       </div>
 
