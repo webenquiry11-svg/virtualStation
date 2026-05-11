@@ -36,7 +36,9 @@ const Footer = () => {
                 COMMANDING THE <br /> <span className="text-blue-500">NATIONAL GRID.</span>
               </h2>
               <p className="text-gray-500 text-sm font-light leading-relaxed max-w-sm">
-                Virtual Station
+                A-59/31/01, Block-A-59, Sulabh Awash, Sector-1, Gomti Nagar Vistar,<br />
+                Lucknow, UP - 226010.<br /><br />
+                Email: info@virtualstation.in
               </p>
             </div>
             
