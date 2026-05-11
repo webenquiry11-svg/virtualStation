@@ -42,9 +42,9 @@ const Footer = () => {
             
             <div className="flex gap-3">
               {[
-                { icon: <Github size={18} />, link: "https://github.com/Ayushsharma-tech" },
+                { icon: <Github size={18} />, link: "#" },
                 { icon: <Linkedin size={18} />, link: "#" },
-                { icon: <Instagram size={18} />, link: "https://www.instagram.com/acoustic_ehsaas/" },
+                { icon: <Instagram size={18} />, link: "#" },
                 { icon: <Twitter size={18} />, link: "#" }
               ].map((social, i) => (
                 <motion.a
