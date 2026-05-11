@@ -15,12 +15,11 @@ const HeroSection = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="w-full max-w-[1300px] flex items-center justify-between px-6 md:px-10 py-3 
-                     /* EXACT GRADIENT: Solid white on left to deep black on right */
-                     bg-gradient-to-r from-white/95 via-[#222222]/90 to-black/95
-                     backdrop-blur-3xl saturate-150 border border-white/10 rounded-3xl 
+                     bg-white
+                     backdrop-blur-3xl saturate-150 border border-black/5 rounded-3xl 
                      shadow-[0_25px_60px_rgba(0,0,0,0.8)]"
         >
-          {/* LOGO AREA: Perfectly visible against the solid white starting gradient */}
+          {/* LOGO AREA: Perfectly visible against the solid white background */}
           <div className="flex items-center gap-2 min-w-fit">
             <div className="relative w-32 md:w-[210px]">
               <Image 
@@ -34,23 +33,23 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* NAV LINKS: White high-contrast text to match reference image */}
-          <ul className="hidden lg:flex items-center gap-12 text-[11px] uppercase tracking-[0.35em] font-bold font-mono text-white">
-            <li><a href="#home" className="hover:text-blue-400 transition-all duration-300">Home</a></li>
-            <li><a href="#story" className="hover:text-blue-400 transition-all duration-300">Story</a></li>
-            <li><a href="#services" className="hover:text-blue-400 transition-all duration-300">Services</a></li>
-            <li><a href="#industries" className="hover:text-blue-400 transition-all duration-300">Industries</a></li>
-            <li><a href="#contact" className="hover:text-blue-400 transition-all duration-300">Contact</a></li>
+          {/* NAV LINKS: Black text to contrast with the white background */}
+          <ul className="hidden lg:flex items-center gap-12 text-[11px] uppercase tracking-[0.35em] font-bold font-mono text-black">
+            <li><a href="#home" className="hover:text-blue-600 transition-all duration-300">Home</a></li>
+            <li><a href="#story" className="hover:text-blue-600 transition-all duration-300">Story</a></li>
+            <li><a href="#services" className="hover:text-blue-600 transition-all duration-300">Services</a></li>
+            <li><a href="#industries" className="hover:text-blue-600 transition-all duration-300">Industries</a></li>
+            <li><a href="#contact" className="hover:text-blue-600 transition-all duration-300">Contact</a></li>
           </ul>
 
           {/* ACTION AREA: Right-aligned Phone Icon & Init Call */}
           <div className="flex items-center gap-6">
-            <div className="h-10 w-[1px] bg-white/10 hidden md:block" />
+            <div className="h-10 w-[1px] bg-black/10 hidden md:block" />
             <a href="tel:+91XXXXXXXXXX" className="flex items-center gap-4 group">
-              <div className="w-11 h-11 rounded-2xl bg-blue-500/5 border border-white/10 flex items-center justify-center group-hover:bg-blue-600 group-hover:border-blue-600 transition-all duration-500">
-                <Phone size={18} className="text-white group-hover:scale-110 transition-transform" />
+              <div className="w-11 h-11 rounded-2xl bg-blue-500/10 border border-black/10 flex items-center justify-center group-hover:bg-blue-600 group-hover:border-blue-600 transition-all duration-500">
+                <Phone size={18} className="text-blue-600 group-hover:text-white group-hover:scale-110 transition-transform" />
               </div>
-              <span className="hidden xl:block text-[10px] font-mono tracking-[0.4em] text-white/70 group-hover:text-white transition-colors">INIT_CALL</span>
+              <span className="hidden xl:block text-[10px] font-mono tracking-[0.4em] text-black/70 group-hover:text-black transition-colors">INIT_CALL</span>
             </a>
           </div>
         </motion.div>
