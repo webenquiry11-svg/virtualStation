@@ -74,8 +74,8 @@ const ContactSection = () => {
               
               <div className="space-y-6">
                 {[
-                  { icon: <Mail size={18} />, label: "Encrypted Mail", val: "contact@virtualstation.com" },
-                  { icon: <MapPin size={18} />, label: "Base Node", val: "India" },
+                  { icon: <Mail size={18} />, label: "Encrypted Mail", val: "info@virtualstation.in" },
+                  { icon: <MapPin size={18} />, label: "Base Node", val: "A-59/31/01, Block-A-59, Sulabh Awash, Sector-1, Gomti Nagar Vistar, Lucknow, UP - 226010." },
                   { icon: <Globe size={18} />, label: "Deployment", val: "Global Architecture" }
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-6 group">
